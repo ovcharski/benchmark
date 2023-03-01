@@ -2,7 +2,9 @@
 
 ## Install Playwright
 
-> npm init playwright@latest\
+> npm install
+
+> npx playwright install
 
 ## Run Playwright
 
