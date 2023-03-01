@@ -1,5 +1,9 @@
 import { test, expect } from '@playwright/test';
 
+test.afterEach(async ({ page }) => {
+    await page.close();
+})
+
 test('Wikipedia', async ({ page }) => {
     await page.goto('https://en.wikipedia.org/wiki/Main_Page');
     await page.getByPlaceholder('Search Wikipedia').click();
@@ -18,8 +22,6 @@ test('GitHub', async ({ page }) => {
 });
 
 test('Reddit', async ({ page }) => {
-    await page.goto('https://www.reddit.com/');
-    await page.goto('https://www.reddit.com/search/?q=Sport');
     await page.goto('https://www.reddit.com/r/popular/');
 });
 
@@ -43,8 +45,8 @@ test('QQ', async ({ page }) => {
     await page.goto('https://qq.com/');
 });
 
-test('Netflix', async ({ page }) => {
-    await page.goto('https://netflix.com/');
+test('World Athletics', async ({ page }) => {
+    await page.goto('https://worldathletics.org/');
 });
 
 test('Dzen', async ({ page }) => {
