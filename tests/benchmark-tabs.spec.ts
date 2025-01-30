@@ -67,7 +67,7 @@ test('Open multiple sites in tabs', async ({ context }) => {
   // Open each site in a new tab and perform actions if specified
   for (const site of sites) {
     // Wait for 3 seconds before opening a new tab
-    await page.waitForTimeout(500);
+    await page.waitForTimeout(1000);
     // Create a new tab
     const newPage = await context.newPage();
     
