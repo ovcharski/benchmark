@@ -75,4 +75,6 @@ test('Open multiple sites in tabs', async ({ context }) => {
       await site.actions(newPage);
     }
   }
+  await page.pause();
+
 });

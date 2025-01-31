@@ -1,3 +1,5 @@
+A simple script for personal usage.
+
 # How to run
 
 ## Install Playwright
