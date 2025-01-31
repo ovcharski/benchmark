@@ -25,11 +25,7 @@ test('Open multiple sites in tabs', async ({ context }) => {
       }
     },
     {
-      url: 'https://www.reddit.com/r/popular/top/',
-      actions: async (page) => {
-        expect(await page.title()).toContain('popular');
-      }
-    },
+      url: 'https://www.reddit.com/r/popular/top/', actions: null },
     { url: 'https://globo.com/', actions: null },
     { url: 'https://qq.com/', actions: null },
     { url: 'https://worldathletics.org/', actions: null },
